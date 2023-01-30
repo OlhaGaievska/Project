@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Abel&family=Dancing+Script:wght@500&family=Montserrat:wght@700&family=Moon+Dance&display=swap');
+
+
+:root{
+    --green:rgba(51, 153, 51, 1);    
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(45, 45, 45, 1);
+    --silver: rgba(139, 139, 139, 1);
+    --light_green: rgba(241, 255, 241, 1);
+    --aqua: rgba(161, 226, 235, 1);
+    --gradient: rgba(0, 99, 0, 1);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;    
+    margin: 0;
+    padding: 0;
+}    
+h1,h2,h3,h4,h5,h6 {font-size: inherit;}
+
+
+.margin_width{
+    width: 95%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
