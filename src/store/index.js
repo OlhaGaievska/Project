@@ -1,11 +1,12 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux'
 
 import thunk from 'redux-thunk'
-import { fetchCategories } from '../asyncActions/categoriesFetch'
+
+import { categoriesReducer } from './categoriesReducer'
 
 
 const rootReducer = combineReducers({
-    categories: fetchCategories,
+    categories: categoriesReducer,
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))

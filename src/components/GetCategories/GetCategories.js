@@ -8,7 +8,8 @@ import For_indoor_plants from './For indoor plants.png';
 import Garden_figures from './Garden figures.png';*/
 
 import './GetCategories.css'
-import { fetchCategories } from '../../asyncActions/categoriesFetch';
+
+import { categoriesAction } from '../../store/categoriesReducer';
 
 function GetCategories(props){ 
     const {number,type} = props
@@ -24,8 +25,9 @@ function GetCategories(props){
         {title:'For indoor plants', url:For_indoor_plants},
         {title:'Garden figures', url:Garden_figures}
     ]*/
+    const data = dispatch(categoriesAction(data))
+    const array = data.filter((e, index)=> index < number)
     
-    const array = dispatch(fetchCategories).filter((e, index)=> index < number)
     const categories = 'categories';
     const stock = 'stock';
 
