@@ -33,7 +33,7 @@ function Home(){
                     <Button title='All categories' color='silver' size='small' />
                 </div>    
                 <div className='block_categories_grid'>
-                    <GetCategories number = {4}/>
+                    <GetCategories number = {4} type='categories'/>
                 </div>
             </div>
             <div className='block_gnome'>

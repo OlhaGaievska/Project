@@ -7,7 +7,7 @@ import Catalog from "../Catalog/Catalog";
 import Categories from "../Categories/Categories";
 import Contacts from "../Contacts/Contacts";
 import Home from "../Home/Home";
-import Not_Found from "../../Not_Found/Not_Found";
+import Not_Found from "../Not_Found/Not_Found";
 import Product_description from "../Product_description/Product_description";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
