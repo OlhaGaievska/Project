@@ -6,14 +6,24 @@ import Household_products from './Household products.png';
 import Pots_and_planters from './Pots and planters.png';
 import For_indoor_plants from './For indoor plants.png';
 import Garden_figures from './Garden figures.png';*/
+import { useSelector, useDispatch } from "react-redux"
+import { useEffect } from "react";
 
 import './GetCategories.css'
 
 import { categoriesAction } from '../../store/categoriesReducer';
+import { fetchCategories } from "../../asyncActions/categoriesFetch";
+
 
 function GetCategories(props){ 
     const {number,type} = props
 
+    let allCategories = useSelector(store => store.categories.categories)
+    let dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchCategories())
+    },[])
         
     /*const title_url = [
         {title:'Fertilizers', url:Fertilizers},
@@ -25,9 +35,9 @@ function GetCategories(props){
         {title:'For indoor plants', url:For_indoor_plants},
         {title:'Garden figures', url:Garden_figures}
     ]*/
-    const data = dispatch(categoriesAction(data))
+    const data = dispatch(categoriesAction(allCategories))
     const array = data.filter((e, index)=> index < number)
-    
+
     const categories = 'categories';
     const stock = 'stock';
 
