@@ -1,8 +1,10 @@
 .footer_address{
-    height: 25vh;
+    height: 25vh;    
     font: inherit;
     display: flex;
     justify-content: space-between;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
 /*left side*/

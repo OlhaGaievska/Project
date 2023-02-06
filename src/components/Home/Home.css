@@ -47,11 +47,6 @@
     align-items: center;
 }
 
-.block_categories_text{
-    margin: 1em 1em 1em 0em;
-    font-size: 52px;
-}
-
 .block_gnome{    
     display: flex;
     align-items: center;

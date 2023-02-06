@@ -1,11 +1,14 @@
-function Button(props){
-    let {title, color, size, ...childrens} = props
+/*import { forwardRef } from 'react'
+import './Input.css'
 
+
+const Input = forwardRef((props, ref) => {
     return(
-        <button {...childrens} className={`button_elem ${color} ${size}`}>
-            {title}
-        </button>
+        <input ref={ref} {...props} className='input_elem'/>
     )
-}
+})
 
-export default Button
+
+
+
+export default Input*/

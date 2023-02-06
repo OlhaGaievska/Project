@@ -1,8 +1,15 @@
+import map from './map.png';
+
 function Contacts(){
     return(
-        <div>
-            123
-        </div>
+        <address className='margin_width'>
+        <h2 className='main_text'>We are here!</h2>
+        <img
+            src={map}
+            alt="map_photo"
+            className="map_photo"
+            />
+        </address>
     )
 }
 

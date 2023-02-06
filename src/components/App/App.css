@@ -9,6 +9,8 @@
     --light_green: rgba(241, 255, 241, 1);
     --aqua: rgba(161, 226, 235, 1);
     --gradient: rgba(0, 99, 0, 1);
+    --red: rgba(255, 50, 161, 1);
+
 }
 
 *{
@@ -27,4 +29,10 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;}
 a{
     text-decoration: none;
     color: var(--black);
+}
+
+.main_text{
+    margin: 1em 1em 1em 0em;
+    font-size: 52px;
+    align-items: center;
 }
