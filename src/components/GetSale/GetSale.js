@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux"
 import { useEffect, useState } from "react";
 import Not_Found from "../Not_Found/Not_Found";
+import { Link } from "react-router-dom";
 
 import './GetSale.css'
 
@@ -18,6 +19,8 @@ import { fetchProducts } from "../../asyncActions/productsFetch";
 function GetSale(props){ 
     const {number} = props
 
+    
+
     let allProducts = useSelector(store => store.products.products)
     let dispatch = useDispatch()
     
@@ -33,22 +36,25 @@ function GetSale(props){
       
         <div className='sale margin_width'>            
             <div className='sale_main'>
-                {products.map((elem) =>                 
-                    <div className='sale_block'>
-                        <img
-                            src={`http://localhost:3333${elem.image}`}
-                            alt="sale_photo"
-                            className="sale_photo"    
-                        />
-                        <div className='sale_block_info'>
-                            <div className='sale_block_price'>
-                                <p>{elem.price} €</p>
-                                <p>{elem.discont_price} €</p>
-                                <p> - {Math.round(((elem.price-elem.discont_price)/(elem.price))*100)} %</p>
-                            </div>                        
-                            <h4>{elem.title}</h4>
-                        </div>
-                    </div>          
+                {products.map((elem) =>
+                    <Link to={`/products/${elem.id}`}>                 
+                    <div className='sale_block'>                        
+                            <img
+                                src={`http://localhost:3333${elem.image}`}
+                                alt="sale_photo"
+                                className="sale_photo"    
+                            />
+                            <div className='sale_block_info'>
+                                <div className='sale_block_price'>
+                                    <p>{elem.price} €</p>
+                                    <p>{elem.discont_price} €</p>
+                                    <p> - {Math.round(((elem.price-elem.discont_price)/(elem.price))*100)} %</p>
+                                </div>                        
+                                <h4>{elem.title}</h4>
+                            </div>
+                        </div> 
+                    </Link> 
+                             
                 )}
             </div>       
         </div>:

@@ -1,4 +1,4 @@
-const defaultState = {
+/*const defaultState = {
     categoryProducts: []
 }
 
@@ -9,8 +9,8 @@ export const categoryProductsReducer = (state = defaultState, action) => {
         case CATEGORY:
             return {...state, products: [...action.payload]}       
         default:
-            return state
+            return categoryProducts
     }
 }
 
-export const categoryProductsAction = (payload) => ({type: CATEGORY, payload})
+export const categoryProductsAction = (payload) => ({type: CATEGORY, payload})*/

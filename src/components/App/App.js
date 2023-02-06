@@ -8,10 +8,11 @@ import Categories from "../Categories/Categories";
 import Contacts from "../Contacts/Contacts";
 import Home from "../Home/Home";
 import Not_Found from "../Not_Found/Not_Found";
-import Product_description from "../Product_description/Product_description";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import CategoryProducts from "../CategoryProducts/CategoryProducts";
+import OneProduct from "../OneProduct/OneProduct";
 
 function App(){
     return(
@@ -25,7 +26,7 @@ function App(){
                             <Route path="/categories" element = {<Categories/>}/>                        
                             <Route path="/contacts" element = {<Contacts/>}/>
                             <Route path="/basket" element = {<Basket/>}/>
-                            <Route path="/product/:id" element = {<Product_description/>}/>                            
+                            <Route path="/products/:id" element = {<OneProduct/>}/>                            
                             <Route path="/catalog" element = {<Catalog/>}/>
                             <Route path="/categories/:categoryId" element = {<CategoryProducts/>}/>                 
                             <Route path="*" element = {<Not_Found/>}/>                                            
