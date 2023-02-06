@@ -17,7 +17,8 @@ function OneProduct(){
 
     return(
         <div>
-            {oneProduct2.title}      
+            {oneProduct2.title}
+            {oneProduct2.price}      
         </div> 
     )
 }

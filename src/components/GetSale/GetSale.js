@@ -17,9 +17,7 @@ import { fetchProducts } from "../../asyncActions/productsFetch";
 "categoryId":1},*/
 
 function GetSale(props){ 
-    const {number} = props
-
-    
+    const {number} = props   
 
     let allProducts = useSelector(store => store.products.products)
     let dispatch = useDispatch()
@@ -36,8 +34,8 @@ function GetSale(props){
       
         <div className='sale margin_width'>            
             <div className='sale_main'>
-                {products.map((elem) =>
-                    <Link to={`/products/${elem.id}`}>                 
+                {products.map((elem) =>                    
+                    <Link to={`/products/${elem.id}`}>                                     
                     <div className='sale_block'>                        
                             <img
                                 src={`http://localhost:3333${elem.image}`}
@@ -50,11 +48,10 @@ function GetSale(props){
                                     <p>{elem.discont_price} €</p>
                                     <p> - {Math.round(((elem.price-elem.discont_price)/(elem.price))*100)} %</p>
                                 </div>                        
-                                <h4>{elem.title}</h4>
+                                <h4>{elem.title}</h4>                                
                             </div>
                         </div> 
-                    </Link> 
-                             
+                    </Link>                             
                 )}
             </div>       
         </div>:
