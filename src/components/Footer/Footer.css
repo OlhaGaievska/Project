@@ -22,11 +22,11 @@
 }
 
 .footer_contacts{
-    font-size: 50px;
+    font-size: calc(24px + 26 * (100vw / 1440));
 }
 
 .footer_contacts_tel{
-    font-size: 30px;
+    font-size: calc(22px + 8 * (100vw / 1440));
 }
 
 .footer_address_inst{
@@ -34,18 +34,7 @@
 }
 
 a .footer_address_what{
-    font-size: 30px;
-}
-
-/*photo*/
-.instagram_photo{
-    width: 44px;
-    height: 44px;
-}
-
-.whatsapp_photo{
-    width: 46px;
-    height: 46px;
+    font-size: calc(20px + 10 * (100vw / 1440));
 }
 
 /*right side*/

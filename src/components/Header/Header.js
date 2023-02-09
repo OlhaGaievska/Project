@@ -19,7 +19,7 @@ function Header(){
                     </Link>
                 </div>
                 <div className='header_logo_button'>
-                <Link to={'/catalog'}>
+                <Link to={'/products/all'}>
                     <Button title='Catalog' color='green' size='small'/>
                 </Link>
                 </div>
@@ -29,13 +29,13 @@ function Header(){
                     <nav className='header_nav_block_nav'>
                         <ul className="header_menu_ul">
                             <li className="header_menu_li">
-                                <a href='/categories'>Categories</a>  
+                                <a href='/categories/all'>Categories</a>  
                             </li>
                             <li className="header_menu_li">
-                                <a href='#discount'>Coupon</a>    
+                                <a href='/#discount'>Coupon</a>    
                             </li>
                             <li className="header_menu_li">
-                                <a href='#getSale'>Stock</a>  
+                                <a href='/#getSale'>Stock</a>  
                             </li>
                             <li className="header_menu_li">
                                 <a href='/contacts'>Contacts</a>  

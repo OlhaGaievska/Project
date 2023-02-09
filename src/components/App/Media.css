@@ -1,0 +1,43 @@
+@media (max-width: 1024px){
+.block_sale_foto{
+    display: none;
+}
+
+.block_sale_main{
+    margin: 2em 0em;
+}
+
+.block_sale_main h3{
+    display: none;
+}
+
+.big_text{
+    margin-bottom: 0.5em;
+}
+
+.getcategories_categories {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.list_of_products{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; 
+}
+
+.block_gnome_photo{
+    display: none;
+}
+
+.block_sale_main {
+    width: 100%;
+
+}
+
+.block_gnome_discount {
+    width: 100%;
+    align-items: center;
+}
+
+}

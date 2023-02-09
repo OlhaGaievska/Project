@@ -1,0 +1,42 @@
+.list_of_products_block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.list_of_product_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0em;
+    font-size: 20px;
+}
+
+.list_of_product_price :first-child{
+    font-size: 30px;    
+}
+
+.list_of_product_price :nth-child(2n){
+   color: var(--silver);
+   margin: 0em 1em;
+   text-decoration: line-through;   
+}
+
+.list_of_product_price :nth-child(3n){
+    color: var(--red);
+}
+
+.button_list_of_product{
+	opacity: 0;
+    position: absolute;
+    display: flex;
+    margin-top: 13.5em;
+    transition: 4s;	
+}
+
+.button_list_of_product:hover {	
+	opacity: 2;
+    transition: cubic-bezier(0.1, 1, 0.320, 1);
+    transition: 0.1s;
+}

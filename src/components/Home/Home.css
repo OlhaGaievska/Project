@@ -4,11 +4,15 @@
 }
 
 .block_sale_main{
-    width: 52%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.block_sale_foto{
+    width: 60%;
 }
 
 .block_sale_button{
@@ -16,28 +20,18 @@
     height: 30%;    
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;    
 }
 
 .block_sale_button :first-child{
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
-.block_text{
-    height: 20%;
+.block_text{    
     width: 80%;
     color: var(--white);
-    font-size: 70px;
+    font-size: calc(20px + 30 * (100vw / 1440)); 
     text-align: left; 
-}
-
-.block_sale_foto{
-    width: 48%;
-}
-
-.flovers_photo{
-    width: 900;
-    height: 680;
 }
 
 /*text_and_button*/
@@ -59,11 +53,6 @@
     width: 47%;
 }
 
-.gnome_photo{
-    width: 422px;
-    height: 422px;
-}
-
 .block_gnome_discount{
     width: 53%;
     display: flex;
@@ -77,10 +66,9 @@
 
 .block_gnome_discount_text{
     color: var(--white);
-    font-size: 50px;    
+    font-size: calc(20px + 30 * (100vw / 1440));     
 }
 
-.big_text{
-    height: 15%;
-    font-size: 90px;    
+.big_text{    
+    font-size: calc(22px + 68 * (100vw / 1440));  
 }

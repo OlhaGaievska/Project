@@ -12,7 +12,7 @@ function Footer(){
                 <div className="footer_address_inst_what">
                     <div className="footer_address_inst">
                         <a href="https://www.instagram.com/">
-                            <img
+                            <img width={44} height={44}
                                 src={instagram}
                                 alt="instagram_photo"
                                 className="instagram_photo"
@@ -22,7 +22,7 @@ function Footer(){
                     </div>
                     <div className="footer_address_what">                        
                         <a href="https://www.whatsapp.com/">
-                            <img
+                            <img width={46} height={46}
                             src={whatsapp}
                             alt="whatsapp_photo"
                             className="whatsapp_photo"
