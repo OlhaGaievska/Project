@@ -1,4 +1,5 @@
 .button_elem{
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -36,6 +37,7 @@
   background-color: var(--light_green);
   border-color: var(--green);
   color: var(--green);
+  margin-left: 1em;
 }
 
 .small{  
@@ -44,7 +46,7 @@
   border-radius: 5px;
 }
 
-.big{  
+.big{ 
   font-size: 25px;
   padding: 25px 50px;
   border-radius: 13px;
@@ -54,4 +56,10 @@
   padding: 21px 130px;
   border-radius: 25px;
   font-size: 29px;
+}
+
+.very_long{
+  padding: 25px 10px;
+  border-radius: 25px;
+  font-size: calc(18px + 8 * (100vw / 1440));
 }

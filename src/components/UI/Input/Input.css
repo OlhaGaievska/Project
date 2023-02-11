@@ -1,25 +1,27 @@
 .input_elem {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 7px 16px;
+  width: 100%;
+  display: flex; 
+  align-items: flex-start;
+  box-sizing: border-box;
+  background: var(--white);     
+  border-radius: 25px;   
+  margin-bottom: 1em;
   
-    position: static;
-    width: 356px;
-    height: 48px;
-    left: calc(50% - 356px/2);
-    top: 0%;
-    bottom: 53.85%;
+  font-size: calc(18px + 8 * (100vw / 1440));
+  cursor: pointer;
   
-    background: #FFFFFF;
-  
-    border: 1px solid #CFD8DC;
-    box-sizing: border-box;
-    border-radius: 12px;
-  
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 8px 0px;
-  }
+}
+
+input::placeholder{
+  padding-left: 1em;
+}
+
+.white{
+  border: 1px solid var(--white); 
+}
+
+.long_big{
+  padding: 25px 10px;
+}
+
+

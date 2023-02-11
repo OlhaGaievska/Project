@@ -4,7 +4,7 @@
 }
 
 .block_sale_main{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,9 @@
 }
 
 .block_sale_foto{
-    width: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .block_sale_button{
@@ -61,7 +63,7 @@
 }
 
 .block_gnome_discount :nth-child(2n){
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .block_gnome_discount_text{

@@ -5,6 +5,7 @@ import flovers from './flovers.png';
 import gnome from './gnome.png';
 import GetCategories from '../GetCategories/GetCategories';
 import GetSale from '../GetSale/GetSale';
+import Input from "../UI/Input/Input";
 
 
 function Home(){
@@ -18,13 +19,13 @@ function Home(){
                     <a href='#getSale'>
                         <Button title='Promotions' color='black_white' size='big'/>
                     </a>              
-                <Link to={'/catalog'}>    
+                <Link to={'/products/all'}>    
                     <Button title=' More ' color='white' size='big'/>
                 </Link>                    
                 </div>                           
                 </div>                
                 <div className='block_sale_foto'>                     
-                    <img width={800} height={680}
+                    <img width={679} height={641}
                         src={flovers}
                         alt="flovers_photo"
                         className="flovers_photo"
@@ -34,7 +35,7 @@ function Home(){
             <div className='block_categories'>
                 <div className='block_categories_text_and_button margin_width'>
                     <h2 className='main_text'>Categories</h2>
-                    <a href='/categories'>
+                    <a href='/categories/all'>
                         <Button title='All categories' color='silver' size='small' />
                     </a>
                 </div>    
@@ -53,8 +54,10 @@ function Home(){
                 <div className='block_gnome_discount' >
                     <h2 className='block_gnome_discount_text big_text'>Discount 5%</h2> 
                     <h3 className='block_gnome_discount_text small_text'>for the first order</h3>
-                    
-                    <Button title='Get discount' color='white' size='long'/>
+                    <div className='card_input_button'>
+                        <Input type='tel' size='long_big' color='white' placeholder='+4'/>
+                        <Button title='Get discount' color='white' size='long'/>
+                    </div>
                 </div>                
             </div>
             

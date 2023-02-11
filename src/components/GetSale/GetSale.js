@@ -15,13 +15,13 @@ function GetSale(props){
         dispatch(fetchProducts())
     },[])
 
-    const products = allProducts.sort(()=> Math.random()- Math.random()).filter((e, index)=> index < number)
+    const products = allProducts.filter(elem => elem.price != elem.discont_price).sort(()=> Math.random()- Math.random()).filter((e, index)=> index < number)
        
     return(
         <div className="list_of_products">
             {products.map((elem) =>                    
                 <Link to={`/products/${elem.id}`}>                                     
-                    <Get_List_of_products title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price}/>      
+                    <Get_List_of_products title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price} elem={elem}/>      
                 </Link>                             
             )}
         </div>       

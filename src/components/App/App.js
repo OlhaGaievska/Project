@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Routes, Route, useParams} from "react-router-do
 import './App.css'
 import './Media.css'
 
-import Basket from "../Basket/Basket";
+
 import Catalog from "../Catalog/Catalog";
 import Categories from "../Categories/Categories";
 import Contacts from "../Contacts/Contacts";
@@ -14,6 +14,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import CategoryProducts from "../CategoryProducts/CategoryProducts";
 import OneProduct from "../OneProduct/OneProduct";
+import Cart from "../Cart/Cart";
 
 export const URL = 'http://localhost:3333'
 
@@ -28,7 +29,7 @@ function App(){
                             <Route path="/products/all" element = {<Catalog/>}/>
                             <Route path="/categories/all" element = {<Categories/>}/>                        
                             <Route path="/contacts" element = {<Contacts/>}/>
-                            <Route path="/basket" element = {<Basket/>}/>
+                            <Route path="/cart" element = {<Cart/>}/>
                             <Route path="/products/:id" element = {<OneProduct/>}/>                  
                             <Route path="/categories/:id" element = {<CategoryProducts/>}/>                                    
                             <Route path="*" element = {<Not_Found/>}/>                                            

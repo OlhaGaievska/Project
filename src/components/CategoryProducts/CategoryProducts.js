@@ -25,7 +25,7 @@ function CategoryProducts(){
             {catProducts.map((elem) =>                    
             <Link to={`/categories/${id}`}>                     
                 <Link to={`/products/${elem.id}`}>                                        
-                    <Get_List_of_products title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price}/>      
+                    <Get_List_of_products title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price} elem={elem}/>      
                 </Link>
             </Link>                             
             )}

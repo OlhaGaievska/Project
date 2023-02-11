@@ -1,14 +1,10 @@
-/*import { forwardRef } from 'react'
 import './Input.css'
 
-
-const Input = forwardRef((props, ref) => {
+function Input (props){
+    let {type, placeholder, color, size} = props
     return(
-        <input ref={ref} {...props} className='input_elem'/>
+        <input type={type} placeholder={placeholder} className={`input_elem ${type} ${color} ${size}`}/>        
     )
-})
+}
 
-
-
-
-export default Input*/
+export default Input

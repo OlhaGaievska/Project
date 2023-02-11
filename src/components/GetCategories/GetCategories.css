@@ -11,3 +11,12 @@
     margin: 1em 0em;
     width: 80%;
 }
+
+.categories_foto{
+    width: 318px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}

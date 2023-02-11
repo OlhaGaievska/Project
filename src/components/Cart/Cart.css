@@ -1,0 +1,141 @@
+.main{
+    display: flex;
+}
+
+.cart_main{
+    width: 60%;    
+}
+
+.cart_cart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.cart_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_photo_block{
+    width: 30%;
+}
+
+.cart_photo{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cart_main hr{
+    margin: 4em 0em 2em 0em;
+    width: 100%;
+    border-top: 1px solid var(--silver);
+}
+
+.cart_text_block{
+    width: 40%;   
+    display: flex;
+    flex-direction: column;
+    margin: 0em 2em;
+}
+
+.cart_titel{    
+    font-size: 22px;
+    margin-bottom: 4em;
+}
+
+.cart_couter{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--silver);
+    border-radius: 10px;
+    font-size: 18px;    
+}
+
+.cart_couter button{
+    width: 10%;
+    padding: 0.5em 1em;
+    background-color: var(--white);
+    border: none;
+    font-size: 18px;      
+}
+
+.cart_price_block{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.cart_price{
+    font-size: 40px;
+    margin: 0em 0.8em;
+}
+
+.cart_discont_price{
+    font-size: 20px;
+    color: var(--silver);
+    text-decoration: line-through;
+}
+
+.delet_block{
+    width: 5%;
+    margin-bottom: 10em;
+}
+
+.delet_block button{
+    padding: 0.5em;
+    background-color: var(--white);
+    border: none;
+    font-size: 25px;
+}
+
+.cart_header button{
+    padding: 0.5em;
+    background-color: var(--white);
+    border: none;
+    font-size: 20px;
+}
+
+/*RIGHT*/
+
+.order_details{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20em;
+    margin-left: 4em;
+    padding: 2em;
+    border: 2px solid var(--silver);
+    border-radius: 16px;
+    
+}
+
+.sum{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.order_details_text{
+    font-size: 28px;
+    margin-bottom: 2em;
+}
+
+.order_details_sum{
+    font-size: 24px;
+    margin-bottom: 2em;
+}
+
+.order_details_sum_number{
+    font-size: 32px;
+}

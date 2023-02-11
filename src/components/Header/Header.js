@@ -3,9 +3,11 @@ import './Header.css'
 import logo from './logo.png';
 import basket from './basket.png';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 function Header(){
+    const cart = useSelector(store => store.cart.cart)
     return(
         <header className='header margin_width'>
             <div className='header_logo'>
@@ -43,13 +45,16 @@ function Header(){
                         </ul>                         
                     </nav>
                 </div>
-                <div className='header_block_photo'>
-                    <img
-                    src={basket}
-                    alt="basket_photo"
-                    className="basket_photo"
-                    />
-                </div>
+                <Link to={'/cart'}>
+                    <div className='header_block_photo'>
+                        <img
+                        src={basket}
+                        alt="basket_photo"
+                        className="basket_photo"
+                        />
+                        <p className='header_cart_number'>{`${cart.reduce((sum, value ) => sum + value.count, 0)}`}</p>
+                    </div>
+                </Link>
             </div>        
         </header>
     )

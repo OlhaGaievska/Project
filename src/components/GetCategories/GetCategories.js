@@ -24,12 +24,8 @@ function GetCategories(props){
         <div className='getcategories_categories'>                
             {categories2.map((elem) =>            
                 <Link to={`/categories/${elem.id}`}>                
-                    <div  className='getcategories_categories_foto'>   
-                        <img width={310} height={300}
-                            src={URL + elem.image}
-                            alt="categories_photo"
-                            className="photo"    
-                        />
+                    <div  className='getcategories_categories_foto'> 
+                        <div className='categories_foto' style={{backgroundImage: `url(${URL + elem.image})`}}></div>                 
                         <h2 className="getcategories_categories_text">{elem.title}</h2>            
                     </div>
                 </Link>)}
