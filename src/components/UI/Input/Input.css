@@ -1,15 +1,10 @@
 .input_elem {
   width: 100%;
-  display: flex; 
-  align-items: flex-start;
+  display: flex;  
   box-sizing: border-box;
-  background: var(--white);     
-  border-radius: 25px;   
-  margin-bottom: 1em;
-  
-  font-size: calc(18px + 8 * (100vw / 1440));
-  cursor: pointer;
-  
+  background: var(--white);  
+  margin-bottom: 1em;  
+  cursor: pointer; 
 }
 
 input::placeholder{
@@ -21,7 +16,7 @@ input::placeholder{
 }
 
 .long_big{
+  border-radius: 25px; 
   padding: 25px 10px;
+  font-size: calc(18px + 8 * (100vw / 1440));
 }
-
-

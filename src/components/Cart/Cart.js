@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { addCountAction, deletCountAction, remCountAction } from "../../store/cartReducer"
@@ -11,6 +12,10 @@ import './Cart.css'
 function Cart(){ 
     const cart = useSelector(store => store.cart.cart)
     let dispatch = useDispatch()
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart))
+    },[cart])
     
     return(
     <div className="main margin_width">

@@ -1,6 +1,5 @@
 const defaultState = {
-    cart: []
-}
+    cart: JSON.parse(localStorage.getItem('cart')) ?? []}
 
 const ADD_ITEM = 'ADD_ITEM'
 const ADD_COUNT = 'ADD_COUNT'
