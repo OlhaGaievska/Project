@@ -55,7 +55,7 @@ function Home(){
                     <h2 className='block_gnome_discount_text big_text'>Discount 5%</h2> 
                     <h3 className='block_gnome_discount_text small_text'>for the first order</h3>
                     <div className='card_input_button'>
-                        <Input type='tel' size='long_big' color='white' placeholder='+4'/>
+                        <Input type='tel' size='long_big' color='white_input' placeholder='+4'/>
                         <Button title='Get discount' color='white' size='long'/>
                     </div>
                 </div>                

@@ -5,21 +5,3 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 4em;
 }
-
-.filter{
-    display: flex;
-    flex-direction: row;    
-    justify-content: flex-start;
-    font-size: 24px;
-}
-
-.filter_price{
-    display: flex;
-    
-    width: 20%;
-}
-
-.filter_sale{
-    display: flex;
-    width: 15%;
-}

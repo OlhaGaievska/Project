@@ -7,12 +7,17 @@
   position: static;  
   cursor: pointer;
   border: 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
   
 .green {
   background-color: var(--green);
   border: none;
   color: var(--white);
+}
+.green:active{
+  background-color: var(--light_green);
+  color: var(--green);
 }
   
 .white {
@@ -21,16 +26,29 @@
   color: var(--white);
 }
 
+.white:active{
+  background-color: var(--silver);
+}
+
 .black_white{
   background-color: var(--white);
   border: none;
   color: var(--black);
 }
 
+.black_white:active{
+  background-color: var(--silver);
+}
+
 .silver{
   background-color: transparent;
   border-color: var(--silver);
   color: var(--silver);
+}
+
+.white:active{
+  background-color: var(--silver);
+  color: var(--white);
 }
 
 .light_green{

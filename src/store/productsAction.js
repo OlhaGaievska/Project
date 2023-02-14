@@ -1,6 +1,7 @@
 const defaultState = {
     products: []
 }
+
 const ADD_PRODUCTS = 'ADD_PRODUCTS'
 const SORT_PRODUCTS = 'SORT_PRODUCTS'
 const FILTER_PRODUCTS = 'FILTER_PRODUCTS'
