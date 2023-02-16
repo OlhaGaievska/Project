@@ -1,0 +1,48 @@
+/*block_sale*/
+
+.block_sale{
+    display: flex;
+    background-color: var(--aqua);
+}
+
+.block_sale_main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_sale_foto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.block_sale_button{
+    width: 80%;
+    height: 30%;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.block_sale_button :first-child{
+    margin-right: 1em;
+}
+
+.block_text{    
+    width: 80%;
+    color: var(--white);
+    font-size: calc(20px + 30 * (100vw / 1440)); 
+    text-align: left; 
+}
+
+.big_text{    
+    font-size: calc(22px + 68 * (100vw / 1440));  
+}
+
+.block_categories_text_and_button{
+    display: flex;
+    align-items: center;
+}

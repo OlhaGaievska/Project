@@ -1,11 +1,25 @@
 import { URL } from "../components/App/App"
-import { productsAction } from "../store/productsAction"
+import { productsAction } from "../store/ProductReducer"
 
-export const fetchProducts = () => {
+
+export const fetchAllProducts = () => {
     return function(dispatch){
-        let url = URL + '/products/all'
-        fetch(url)
+        fetch(URL + '/products/all')
             .then(res => res.json())
-            .then(data => dispatch(productsAction(data)))
+            .then(data => {
+                console.log(data)
+                dispatch(productsAction(data))
+            })
+    }
+} 
+
+export const fetchProductsByCategories = (id) => {
+    return function(dispatch){
+        fetch(URL + `/categories/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                dispatch(productsAction(data))
+            })
     }
 } 

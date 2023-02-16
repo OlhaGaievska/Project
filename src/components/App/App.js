@@ -4,17 +4,19 @@ import './App.css'
 import './Media.css'
 
 
-import Catalog from "../Catalog/Catalog";
-import Categories from "../Categories/Categories";
-import Contacts from "../Contacts/Contacts";
+import Catalog from "../Header/Catalog/Catalog";
+import Categories from "../Header/Categories/Categories";
+import Contacts from "../Home/Contacts/Contacts";
 import Home from "../Home/Home";
-import Not_Found from "../Not_Found/Not_Found";
-
-import Header from "../Header/Header";
+import Header from "../Header/Header/Header";
 import Footer from "../Footer/Footer";
-import CategoryProducts from "../CategoryProducts/CategoryProducts";
-import OneProduct from "../OneProduct/OneProduct";
-import Cart from "../Cart/Cart";
+import CategoryProducts from "../Products/CategoryProducts/CategoryProducts";
+import NotFound from "../NotFound/NotFound";
+import Cart from "../Header/Cart/Cart";
+import ProductDescription from "../Products/ProductDescription/ProductDescription";
+import Coupon from "../Home/Coupon/Coupon";
+import Sale from "../Home/Sale/Sale";
+
 
 export const URL = 'http://localhost:3333'
 
@@ -30,9 +32,11 @@ function App(){
                             <Route path="/categories/all" element = {<Categories/>}/>                        
                             <Route path="/contacts" element = {<Contacts/>}/>
                             <Route path="/cart" element = {<Cart/>}/>
-                            <Route path="/products/:id" element = {<OneProduct/>}/>                  
+                            <Route path="/coupon" element = {<Coupon/>}/>
+                            <Route path="/sale" element = {<Sale/>}/> 
+                            <Route path="/products/:id" element = {<ProductDescription/>}/>                  
                             <Route path="/categories/:id" element = {<CategoryProducts/>}/>                                    
-                            <Route path="*" element = {<Not_Found/>}/>                                            
+                            <Route path="*" element = {<NotFound/>}/>                                                                        
                     </Routes>
                 </Router>
                 <Footer/> 
