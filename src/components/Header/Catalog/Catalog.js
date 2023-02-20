@@ -23,7 +23,7 @@ function Catalog(){
             <Filter/>
             <div className="catalog">            
                 {prod.map((elem) =>                    
-                    <Link to={`/products/${elem.id}`}>                                     
+                    <Link key={elem.id} to={`/products/${elem.id}`}>                                     
                         <ProductsList title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price} elem={elem}/>      
                     </Link>                             
                 )}

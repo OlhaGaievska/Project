@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import Button from "../../UI/Button/Button"
-import Input from "../../UI/Input/Input"
+import InputMask from 'react-input-mask';
 import { URL } from "../../App/App"
 import { addCountAction, deletCountAction, remCountAction } from "../../../store/cartReducer"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -67,7 +67,7 @@ function Cart(){
                     (cart.reduce((sum, elem) => Math.round(sum + (elem.price * elem.count)), 0)) + '€' : ''}
                 </p>  
             </div>            
-            <Input type='tel' size='long_big' placeholder='Your phone number'/>
+            <InputMask className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
             <Button title='Order' color='green' size='very_long'/>
         </div>
     </div>

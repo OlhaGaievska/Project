@@ -1,5 +1,5 @@
 .footer_address{
-    height: 25vh;    
+    height: 20vh;    
     font: inherit;
     display: flex;
     justify-content: space-between;
@@ -11,12 +11,13 @@
 }
 /*left side*/
 .footer_address_tel{
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer_address_inst_what{
+.footer_address_inst_what{ 
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -41,6 +42,7 @@ a .footer_address_what{
 
 /*right side*/
 .footer_address_inst_address_time{
+    width: 40%;
     font-size: 20px;
     margin-top: 3.5em;
 }

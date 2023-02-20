@@ -1,8 +1,8 @@
 
-import CategoriesList from "../Header/Categories/CategoriesList/CategoriesList";
-import Coupon from "./Coupon/Coupon";
-import NewSeasonSale from "./NewSeasonSale/NewSeasonSale";
-import SaleList from "./Sale/SaleList";
+import CategoriesList from "../../Header/Categories/CategoriesList/CategoriesList";
+import Coupon from "../Coupon/Coupon";
+import NewSeasonSale from "../NewSeasonSale/NewSeasonSale";
+import SaleList from "../Sale/SaleList";
 
 
 function Home(){

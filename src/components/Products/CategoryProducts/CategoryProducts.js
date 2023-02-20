@@ -24,8 +24,8 @@ function CategoryProducts(){
             <Filter type='categoryproducts'/> 
             <div className="list_of_products">                     
                 {prod.map((elem) =>                    
-                <Link to={`/categories/${id}`}>
-                    <Link to={`/products/${elem.id}`}>                                                     
+                <Link key={elem.key} to={`/categories/${id}`}>
+                    <Link key={elem.key} to={`/products/${elem.id}`}>                                                     
                         <ProductsList title={elem.title} image={elem.image} price={elem.price} discont_price={elem.discont_price} elem={elem}/>      
                     </Link>
                 </Link>                             

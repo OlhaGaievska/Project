@@ -4,7 +4,6 @@ import './App.css'
 import Catalog from "../Header/Catalog/Catalog";
 import Categories from "../Header/Categories/Categories";
 import Contacts from "../Home/Contacts/Contacts";
-import Home from "../Home/Home";
 import Header from "../Header/Header/Header";
 import Footer from "../Footer/Footer";
 import CategoryProducts from "../Products/CategoryProducts/CategoryProducts";
@@ -12,6 +11,8 @@ import NotFound from "../NotFound/NotFound";
 import Cart from "../Header/Cart/Cart";
 import ProductDescription from "../Products/ProductDescription/ProductDescription";
 import Coupon from "../Home/Coupon/Coupon";
+import Sale from "../Home/Sale/Sale";
+import Home from "../Home/Home/Home";
 
 export const URL = 'http://localhost:3333'
 
@@ -30,6 +31,7 @@ function App(){
                             <Route path="/cart" element = {<Cart/>}/>
                             <Route path="/coupon" element = {<Coupon/>}/>
                             <Route path="/login" element = {<Home/>}/>
+                            <Route path="/sale" element = {<Sale/>}/>
                             <Route path="/registrations" element = {<Home/>}/>                                                                                
                             <Route path="/products/:id" element = {<ProductDescription/>}/>                  
                             <Route path="/categories/:id" element = {<CategoryProducts/>}/>                                    

@@ -1,7 +1,7 @@
 .new_season_sale{
     background-color: var(--aqua);
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
 }
 
 .new_season_sale_main{
@@ -38,8 +38,11 @@
     justify-content: center;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1340px){
     .new_season_sale_foto{
         display: none;
+    }
+    .new_season_sale{
+        padding: 8em 0;   
     }
 }

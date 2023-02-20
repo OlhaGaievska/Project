@@ -44,7 +44,7 @@
 	left: 8px;   
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1400px){
 
     .menu_block{
         display: flex;
@@ -80,8 +80,7 @@
         z-index: 2;   
     }
 
-    .menu {
-        width: 25%;
+    .menu {       
         height: 40vh;
         background-color: var(--white);
         box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);

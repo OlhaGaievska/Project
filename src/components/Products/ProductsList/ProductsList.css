@@ -42,8 +42,8 @@
 }
 
 .list_of_products_foto{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,4 +54,3 @@
 .list_of_product_titel{
     width: 70%;
 }
-

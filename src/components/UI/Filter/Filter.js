@@ -17,7 +17,7 @@ function Filter(){
         <div className='filter_checkbox'>
            <p>Sale:</p>      
             <input onChange={(e) => dispatch(filterProductsAction(e.target.checked))} id="checkbox_sale" type='checkbox'/>       
-        <label for="checkbox_sale"></label> 
+        <label htmlFor="checkbox_sale"></label> 
         </div>
         <div className='filter_select'>
             <label>Sort:</label>

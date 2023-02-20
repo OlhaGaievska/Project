@@ -8,7 +8,7 @@ function Footer(){
            <address className="footer_address">
            <div className="footer_address_tel">
                 <h4 className="footer_contacts">Contacts</h4>
-                <a className="footer_contacts_tel" href="tel:04912345678">0491 234 56 78</a>
+                <a className="footer_contacts_tel" href="tel:04912345678">+49 123 456 78</a>
                 <div className="footer_address_inst_what">
                     <div className="footer_address_inst">
                         <a href="https://www.instagram.com/">

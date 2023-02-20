@@ -18,15 +18,19 @@ function LogoCatalogRegistration(){
                     />
                 </Link>
             </div>
-            <div className='header_logo_button'>
-                <Link to={'/products/all'}>
-                    <Button title='Catalog' color='green' size='small'/>
-                </Link>
+            <div className='header_logo_button_block'>
+                <div className='header_logo_button'>
+                    <Link to={'/products/all'}>
+                        <Button title='Catalog' color='green' size='small'/>
+                    </Link>
+                </div>
+                <div>
+                    <Link to={'/registrations'}>
+                        <Button onClick={() => setActive(true)} title='Login / Registration' color='light_green' size='small'/>
+                    </Link>
+                    <Modal active={active} setActive={setActive}/>
+                </div>
             </div>
-            <Link to={'/registrations'}>
-                <Button onClick={() => setActive(true)} title='Login / Registration' color='light_green' size='small'/>
-            </Link>
-            <Modal active={active} setActive={setActive}/>
         </div> 
     )
 }

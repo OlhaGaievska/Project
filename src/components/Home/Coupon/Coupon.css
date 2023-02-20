@@ -23,7 +23,7 @@
 
 .block_gnome_discount_text{
     color: var(--white);
-    font-size: calc(20px + 30 * (100vw / 1440));     
+    font-size: calc(16px + 34 * (100vw / 1440));     
 }
 
 .big_text{    
@@ -31,16 +31,27 @@
 }
 
 .input_mask{
-    padding: 1.5em 10em;
+    padding: 1.4em 6.8em;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--silver);
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 
-@media (max-width: 1440px){
+@media (max-width: 1130px){
     .block_gnome_photo{
-        display: none;
+        display: none;        
     }
+
+    .block_gnome{   
+        justify-content: center;
+        padding-left: 0em;
+    }
+
+    .block_gnome_discount{
+        width:auto;    
+    }
+
+
 }
