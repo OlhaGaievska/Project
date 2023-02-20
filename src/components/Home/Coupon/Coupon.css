@@ -29,3 +29,18 @@
 .big_text{    
     font-size: calc(22px + 68 * (100vw / 1440));  
 }
+
+.input_mask{
+    padding: 1.5em 10em;
+    border-radius: 25px;
+    font-size: 18px;
+    color: var(--silver);
+    margin-bottom: 2em;
+}
+
+
+@media (max-width: 1440px){
+    .block_gnome_photo{
+        display: none;
+    }
+}

@@ -1,65 +1,7 @@
 .header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-weight: 500;
     margin: 1em auto;
-}
-
-.header_logo{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.header_logo_button{
-    margin-left: 3em;
-}
-
-.logo_photo{
-    width: 72px;
-    height: 72px;
-}
-
-.header_nav{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-}
-
-.header_nav_block{
-    width: 95%;    
-}
-
-.header_menu_ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header_menu_li{    
-    font-size: 16px;       
-}
-
-.header a:hover {    
-    color: var(--green);     
-}
-
-.header_block_photo{
-    width: 100%;   
-    position: relative;     
-}
-
-.basket_photo{
-    width: 26px;
-    height: 29px; 
-}
-
-.header_cart_number{
-    width: 100%;
-    position: absolute;
-	bottom: 5px;
-	left: 8px;
-   
 }

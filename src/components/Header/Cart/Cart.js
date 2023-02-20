@@ -5,6 +5,8 @@ import Button from "../../UI/Button/Button"
 import Input from "../../UI/Input/Input"
 import { URL } from "../../App/App"
 import { addCountAction, deletCountAction, remCountAction } from "../../../store/cartReducer"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
 
@@ -48,8 +50,8 @@ function Cart(){
                                 Math.round(elem.discont_price * elem.count) + '€': ''}
                             </p>
                         </div> 
-                        <div className='delet_block'>
-                            <button onClick={() => dispatch(deletCountAction(elem.id))}>X</button>
+                        <div className='delet_block'>                            
+                            <FontAwesomeIcon onClick={() => dispatch(deletCountAction(elem.id))} title={'close'} icon={faXmark} className='delet_block_icon'/> 
                         </div>                
                     </div>        
                     <hr/>

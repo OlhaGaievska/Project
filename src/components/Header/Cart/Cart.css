@@ -88,10 +88,7 @@
     margin-bottom: 10em;
 }
 
-.delet_block button{
-    padding: 0.5em;
-    background-color: var(--white);
-    border: none;
+.delet_block_icon{      
     font-size: 25px;
 }
 

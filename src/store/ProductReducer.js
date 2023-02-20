@@ -42,7 +42,7 @@ export const productsReducer = (state = defaultState, action) => {
         case PRICE_FROM_PRODUCTS:
             if (action.payload){
                 return {...state, products: state.products.map(elem => {
-                    if ((Math.round (elem.discont_price)) < action.payload){
+                    if (elem.discont_price < action.payload){
                         elem.show = false
                     }
                     return elem
@@ -53,14 +53,14 @@ export const productsReducer = (state = defaultState, action) => {
         case PRICE_TO_PRODUCTS:
             if (action.payload){
                 return {...state, products: state.products.map(elem => {
-                    if ((Math.round (elem.discont_price)) > action.payload){
-                        elem.show = false
+                    if (elem.show = true && elem.discont_price < action.payload){
+                        elem.show = true
                     }
                     return elem
                 }) }
             } else {
-                return {...state, products: state.products.map(elem => ({...elem, show: true}))}
-            }   
+                return {...state, products: state.products.map(elem => ({...elem, show: false}))}
+            }            
         default:
             return state
     }

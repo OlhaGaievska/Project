@@ -37,3 +37,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 1400px){
+    .new_season_sale_foto{
+        display: none;
+    }
+}

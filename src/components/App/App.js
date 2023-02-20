@@ -1,9 +1,6 @@
-import React from "react";
-import {BrowserRouter as Router, Routes, Route, useParams} from "react-router-dom";
+import React, { useState } from "react";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
-import './Media.css'
-
-
 import Catalog from "../Header/Catalog/Catalog";
 import Categories from "../Header/Categories/Categories";
 import Contacts from "../Home/Contacts/Contacts";
@@ -15,12 +12,11 @@ import NotFound from "../NotFound/NotFound";
 import Cart from "../Header/Cart/Cart";
 import ProductDescription from "../Products/ProductDescription/ProductDescription";
 import Coupon from "../Home/Coupon/Coupon";
-import Sale from "../Home/Sale/Sale";
-
 
 export const URL = 'http://localhost:3333'
 
 function App(){
+    
     return(
         <div> 
             <div>             
@@ -33,14 +29,15 @@ function App(){
                             <Route path="/contacts" element = {<Contacts/>}/>
                             <Route path="/cart" element = {<Cart/>}/>
                             <Route path="/coupon" element = {<Coupon/>}/>
-                            <Route path="/sale" element = {<Sale/>}/> 
+                            <Route path="/login" element = {<Home/>}/>
+                            <Route path="/registrations" element = {<Home/>}/>                                                                                
                             <Route path="/products/:id" element = {<ProductDescription/>}/>                  
                             <Route path="/categories/:id" element = {<CategoryProducts/>}/>                                    
-                            <Route path="*" element = {<NotFound/>}/>                                                                        
+                            <Route path="*" element = {<NotFound/>}/>                                                                                                                               
                     </Routes>
                 </Router>
                 <Footer/> 
-            </div>        
+            </div>                  
         </div>
     )
 }
