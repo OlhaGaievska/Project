@@ -66,9 +66,11 @@ function Cart(){
                     {cart.reduce((sum, elem) => Math.round(sum + (elem.price * elem.count)), 0) != 0 ? 
                     (cart.reduce((sum, elem) => Math.round(sum + (elem.price * elem.count)), 0)) + '€' : ''}
                 </p>  
-            </div>            
-            <InputMask className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
-            <Button title='Order' color='green' size='very_long'/>
+            </div> 
+            <div className='cart_contacts'>           
+                <InputMask className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
+                <Button title='Order' color='green' size='very_long'/>
+            </div>
         </div>
     </div>
     )

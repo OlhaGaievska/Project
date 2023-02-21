@@ -5,8 +5,7 @@ const defaultState = {
 const ADD_PRODUCTS = 'ADD_PRODUCTS'
 const SORT_PRODUCTS = 'SORT_PRODUCTS'
 const FILTER_PRODUCTS = 'FILTER_PRODUCTS'
-const PRICE_FROM_PRODUCTS = 'PRICE_FROM_PRODUCTS'
-const PRICE_TO_PRODUCTS = 'PRICE_TO_PRODUCTS'
+const FILTER_PRODUCTS_PRICE = 'FILTER_PRODUCTS_PRICE'
 
 export const productsReducer = (state = defaultState, action) => {
     switch (action.type) {
@@ -39,28 +38,13 @@ export const productsReducer = (state = defaultState, action) => {
             } else {
                 return {...state, products: state.products.map(elem => ({...elem, show: true}))}
             }
-        case PRICE_FROM_PRODUCTS:
-            if (action.payload){
-                return {...state, products: state.products.map(elem => {
-                    if (elem.discont_price < action.payload){
-                        elem.show = false
-                    }
-                    return elem
-                }) }
-            } else {
-                return {...state, products: state.products.map(elem => ({...elem, show: true}))}
-            }
-        case PRICE_TO_PRODUCTS:
-            if (action.payload){
-                return {...state, products: state.products.map(elem => {
-                    if (elem.show = true && elem.discont_price < action.payload){
-                        elem.show = true
-                    }
-                    return elem
-                }) }
-            } else {
-                return {...state, products: state.products.map(elem => ({...elem, show: false}))}
-            }            
+        case FILTER_PRODUCTS_PRICE:
+            return {...state, products: state.products.map(elem => {
+                if (elem.discont_price < action.payload.min_price || elem.discont_price > action.payload.max_price){
+                    elem.show = false
+                }
+                return elem
+            })}            
         default:
             return state
     }
@@ -69,5 +53,4 @@ export const productsReducer = (state = defaultState, action) => {
 export const productsAction = (payload) => ({type: ADD_PRODUCTS, payload})
 export const sortProductsAction = (payload) => ({type: SORT_PRODUCTS, payload})
 export const filterProductsAction = (payload) => ({type: FILTER_PRODUCTS, payload})
-export const priceFromProductsAction = (payload) => ({type: PRICE_FROM_PRODUCTS, payload})
-export const priceToProductsAction = (payload) => ({type: PRICE_TO_PRODUCTS, payload})
+export const filterProductsPriceAction = (payload) => ({type: FILTER_PRODUCTS_PRICE, payload})

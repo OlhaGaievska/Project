@@ -1,5 +1,6 @@
 .main{
     display: flex;
+    flex-direction: row;
 }
 
 .cart_main{
@@ -73,7 +74,7 @@
 }
 
 .cart_price{
-    font-size: 40px;
+    font-size: calc(20px + 20 * (100vw / 1440));  
     margin: 0em 0.8em;
 }
 
@@ -135,4 +136,32 @@
 
 .order_details_sum_number{
     font-size: 32px;
+}
+
+.cart_contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 1310px){
+    .main{
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+    }
+    .order_details {
+        margin-top: 0em;
+        margin-left: 0em;
+        width: 50%;
+    }
+
+    .cart_main {
+        width: 100%;
+    }
+
+    .input_mask {        
+        font-size: calc(16px + 4 * (100vw / 1440)); 
+    }
 }

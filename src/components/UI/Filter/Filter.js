@@ -1,26 +1,45 @@
-import { useDispatch } from "react-redux"
-import { filterProductsAction, priceFromProductsAction, priceToProductsAction, sortProductsAction } from "../../../store/ProductReducer"
+import { useRef } from "react"
+import { useDispatch  } from "react-redux"
+import { filterProductsAction, filterProductsPriceAction, sortProductsAction } from "../../../store/ProductReducer"
+
 
 import Input from "../Input/Input"
 import './Filter.css'
 
 function Filter(){ 
-    let dispatch = useDispatch()   
+    
+    let dispatch = useDispatch()
+    const formRef = useRef() 
+
+    
+    function setMinMaxPrice(e){
+        console.log(formRef, e.target)
+        if (e.code == 'Enter'){
+            console.log('etst')
+            let data = new FormData(formRef.current)
+            data = Object.fromEntries(data)
+            data.max_price = (!data.max_price) ? Infinity : data.max_price
+            data.min_price = (!data.min_price) ? -Infinity : data.min_price
+            dispatch(filterProductsPriceAction(data))
+        }
+    }
     
     return( 
     <div className='filter'>
         <div className='filter_price'>
-            <label>Price: </label>
-                <Input onChange={(e) => dispatch(priceFromProductsAction(e.target.value))} min={0} type='number' placeholder='from' size='small_input'/>
-                <Input onChange={(e) => dispatch(priceToProductsAction(e.target.value))} type='number' placeholder='to' size='small_input'/>           
+            <label className='filter_label'>Price: </label>
+            <form ref={formRef} onKeyDown={(e) => setMinMaxPrice(e)}>
+                <Input  type='number' placeholder='from' size='small_input'/>
+                <Input  type='number' placeholder='to' size='small_input'/>
+            </form>           
         </div>
         <div className='filter_checkbox'>
-           <p>Sale:</p>      
+           <p className='filter_label'>Sale:</p>      
             <input onChange={(e) => dispatch(filterProductsAction(e.target.checked))} id="checkbox_sale" type='checkbox'/>       
-        <label htmlFor="checkbox_sale"></label> 
+            <label htmlFor="checkbox_sale"></label> 
         </div>
         <div className='filter_select'>
-            <label>Sort:</label>
+            <label className='filter_label'>Sort:</label>
                 <select onChange={(e) => dispatch(sortProductsAction(e.target.value))}>
                     <option value={0}>Default</option>
                     <option value={1}>Price: High - Low</option>
