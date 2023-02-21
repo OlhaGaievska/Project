@@ -10,27 +10,22 @@ function Filter(){
     
     let dispatch = useDispatch()
     const formRef = useRef() 
-
     
-    function setMinMaxPrice(e){
-        console.log(formRef, e.target)
-        if (e.code == 'Enter'){
-            console.log('etst')
-            let data = new FormData(formRef.current)
-            data = Object.fromEntries(data)
-            data.max_price = (!data.max_price) ? Infinity : data.max_price
-            data.min_price = (!data.min_price) ? -Infinity : data.min_price
-            dispatch(filterProductsPriceAction(data))
-        }
+    function setMinMaxPrice(e){                 
+        let data = new FormData(formRef.current)
+        data = Object.fromEntries(data)
+        data.max_price = (!data.max_price) ? Infinity : data.max_price
+        data.min_price = (!data.min_price) ? -Infinity : data.min_price
+        dispatch(filterProductsPriceAction(data))        
     }
     
     return( 
     <div className='filter'>
         <div className='filter_price'>
             <label className='filter_label'>Price: </label>
-            <form ref={formRef} onKeyDown={(e) => setMinMaxPrice(e)}>
-                <Input  type='number' placeholder='from' size='small_input'/>
-                <Input  type='number' placeholder='to' size='small_input'/>
+            <form ref={formRef} onChange={(e) => setMinMaxPrice(e)}>
+                <Input  name='min_price' type='number' placeholder='from' size='small_input'/>
+                <Input  name='max_price' type='number' placeholder='to' size='small_input'/>
             </form>           
         </div>
         <div className='filter_checkbox'>

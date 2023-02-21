@@ -1,5 +1,5 @@
 .footer_address{
-    height: 20vh;    
+    height: 25vh;    
     font: inherit;
     display: flex;
     justify-content: space-between;
@@ -9,12 +9,15 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: 4em 4em 4em 2em;
 }
+
+
 /*left side*/
+
 .footer_address_tel{
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer_address_inst_what{ 
@@ -43,8 +46,10 @@ a .footer_address_what{
 /*right side*/
 .footer_address_inst_address_time{
     width: 40%;
-    font-size: 20px;
-    margin-top: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;    
 }
 
 .footer_address_inst_address_time :nth-child(3n){    
@@ -52,5 +57,5 @@ a .footer_address_what{
 }
 
 .footer_address_inst_address_time :nth-child(2n){
-    font-size: 30px;    
+    font-size: calc(20px + 10 * (100vw / 1440)); 
 }

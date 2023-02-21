@@ -9,7 +9,7 @@ import ProductsList from "../ProductsList/ProductsList";
 function CategoryProducts(){
     const {id} = useParams()  
 
-    let prod = useSelector(store => store.products.products).filter(elem => elem.show)
+    let prod = useSelector(store => store.products.products).filter(elem => elem.show).filter(elem => elem.show2)
     let categ = useSelector(store => store.categories.categories).find(elem=>elem.id ==id)
     let dispatch = useDispatch()  
     

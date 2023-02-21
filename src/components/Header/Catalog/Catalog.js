@@ -10,7 +10,7 @@ import './Catalog.css'
 
 function Catalog(){
     const {id} = useParams()
-    let prod = useSelector(store => store.products.products).filter(elem => elem.show)
+    let prod = useSelector(store => store.products.products).filter(elem => elem.show).filter(elem => elem.show2)
     let dispatch = useDispatch()
     
     useEffect(() => {
