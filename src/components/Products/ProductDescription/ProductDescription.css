@@ -72,3 +72,26 @@ hr{
     margin-bottom: 1em;
 }
 
+
+@media (max-width: 1200px){
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;    
+    }
+
+    .product_photo{
+        width: 100%;
+    }
+    .product_info{
+        width: 100%;
+    }
+
+    .product_info_info{
+        width: 100%;
+        
+    }
+    .product_price_button{
+        width: 40%;
+    }
+}

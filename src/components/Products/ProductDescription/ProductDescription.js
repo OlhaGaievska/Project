@@ -29,8 +29,10 @@ function ProductDescription(){
                             <h3>{prodDescription?.price}€</h3>
                             <p>{prodDescription?.discont_price != prodDescription?.price ? '-' + prodDescription?.discont_price + '€' : ''}</p>
                             <p> { Math.round(((prodDescription?.price-prodDescription?.discont_price)/(prodDescription?.price))*100) != '0'? '-' + Math.round(((prodDescription?.price-prodDescription?.discont_price)/(prodDescription?.price))*100) + '€' : ''}</p>
+                        </div>
+                        <div className="product_price_button">                            
+                            <Button onClick={()=> dispatch(addItemAction(prodDescription))} title='Add to Cart' color='green' size='big'/>
                         </div>                            
-                            <Button onClick={()=> dispatch(addItemAction(prodDescription))} title='Add to Cart' color='green' size='big'/>                            
                             <hr/>
                             <p className="product_text text_titel">Description</p>
                             <p className="product_text">{prodDescription?.description}</p>
