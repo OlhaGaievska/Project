@@ -3,8 +3,9 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchCategories } from "../../../asyncActions/categoriesFetch";
 import Filter from "../../UI/Filter/Filter";
-import { fetchProductsByCategories } from "../../../asyncActions/ProductsFetch";
+
 import ProductsList from "../ProductsList/ProductsList";
+import { fetchProductsByCategories } from "../../../asyncActions/ProductsFetch";
 
 function CategoryProducts(){
     const {id} = useParams()  

@@ -6,7 +6,7 @@ import InputMask from 'react-input-mask';
 import { URL } from "../../App/App"
 import { addCountAction, deletCountAction, remCountAction } from "../../../store/cartReducer"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faXmark} from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
 
@@ -51,7 +51,7 @@ function Cart(){
                             </p>
                         </div> 
                         <div className='delet_block'>                            
-                            <FontAwesomeIcon onClick={() => dispatch(deletCountAction(elem.id))} title={'close'} icon={faXmark} className='delet_block_icon'/> 
+                            <FontAwesomeIcon onClick={() => dispatch(deletCountAction(elem.id))} title={'close'} icon={ faXmark } className='delet_block_icon'/> 
                         </div>                
                     </div>        
                     <hr/>
