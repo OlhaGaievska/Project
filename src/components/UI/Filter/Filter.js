@@ -24,8 +24,8 @@ function Filter(){
         <div className='filter_price'>
             <label className='filter_label'>Price: </label>
             <form ref={formRef} onChange={(e) => setMinMaxPrice(e)}>
-                <Input  name='min_price' type='number' placeholder='from' size='small_input'/>
-                <Input  name='max_price' type='number' placeholder='to' size='small_input'/>
+                <Input min={0} name='min_price' type='number' placeholder='from' size='small_input'/>
+                <Input min={0} name='max_price' type='number' placeholder='to' size='small_input'/>
             </form>           
         </div>
         <div className='filter_checkbox'>

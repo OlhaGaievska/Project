@@ -14,15 +14,14 @@ function Registration(props){
 
     const emailElem = register('email', {required: 'Necessarily'})
     const passwordElem = register('password', {required: 'Necessarily'})
-
-    console.log(emailElem)
-    return(
+    
+    return(       
         <div>
             <p>{title}</p>
             <Input size='small_input small_long' {...emailElem}/>
-            <Input size='small_input small_long' {...passwordElem}/>
+            <Input size='small_input small_long' {...passwordElem}/>            
 
-            <Button color='green' size='small margin' title={button.submit}/>
+            <Button color='green' size='small margin margin-bottom' title={button.submit}/>
 
             <Link to={link}>
                 <Button color='silver' size='small' title={button.redirect}/>
