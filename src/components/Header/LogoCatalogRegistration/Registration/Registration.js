@@ -7,10 +7,10 @@ function Registration(props){
     const {
         register,
         handleSubmit,
-        formState: {errors}
+        
     } = useForm()
 
-    const {title, link, button, formType} = props
+    const {title, link, button } = props
 
     const emailElem = register('email', {required: 'Necessarily'})
     const passwordElem = register('password', {required: 'Necessarily'})
@@ -18,8 +18,8 @@ function Registration(props){
     return(       
         <div>
             <p>{title}</p>
-            <Input size='small_input small_long' {...emailElem}/>
-            <Input size='small_input small_long' {...passwordElem}/>            
+            <Input placeholder="Your email" size='small_input small_long' {...emailElem}/>
+            <Input placeholder="Your password" size='small_input small_long' {...passwordElem}/>            
 
             <Button color='green' size='small margin margin-bottom' title={button.submit}/>
 

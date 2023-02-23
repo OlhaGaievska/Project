@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import Button from "../../UI/Button/Button"
@@ -7,7 +7,7 @@ import { URL } from "../../App/App"
 import { addCountAction, deletCountAction, remCountAction } from "../../../store/cartReducer"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import './Cart.css'
+import './CartPage.css'
 
 
 function Cart(){ 
@@ -68,7 +68,7 @@ function Cart(){
                 </p>  
             </div> 
             <div className='cart_contacts'>           
-                <InputMask className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
+                <InputMask  placeholder="+49" className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
                 <Button title='Order' color='green' size='very_long'/>
             </div>
         </div>

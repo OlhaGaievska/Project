@@ -1,7 +1,7 @@
 import flovers from './flovers.png';
-import Button from '../../UI/Button/Button'
 import { Link } from 'react-router-dom';
 import './NewSeasonSale.css'
+import Button from '../../../UI/Button/Button';
 
 function NewSeasonSale(){
     return(

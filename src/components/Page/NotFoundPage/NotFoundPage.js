@@ -1,7 +1,7 @@
 import notFound from './notFound.jpg';
-import './NotFound.css'
+import './NotFoundPage.css'
 
-function NotFound(){
+function NotFoundPage(){
     return(
         <div className="not_Found">
         
@@ -15,4 +15,4 @@ function NotFound(){
     )
 }
 
-export default NotFound
+export default NotFoundPage

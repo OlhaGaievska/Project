@@ -3,8 +3,8 @@ import './SaleList.css'
 import { useSelector, useDispatch } from "react-redux"
 import { useEffect} from "react";
 import { Link } from "react-router-dom";
-import { fetchAllProducts } from "../../../asyncActions/ProductsFetch";
-import ProductsList from "../../Products/ProductsList/ProductsList";
+import { fetchAllProducts } from "../../../../asyncActions/ProductsFetch";
+import ProductsList from "../../../Products/ProductsList/ProductsList";
 
 
 function SaleList(props){ 

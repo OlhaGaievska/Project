@@ -2,9 +2,9 @@ import { useSelector, useDispatch } from "react-redux"
 import { useEffect } from "react";
 import './CategoriesList.css'
 import { Link } from "react-router-dom";
-import { URL } from "../../../App/App"
 import { fetchCategories } from "../../../../asyncActions/categoriesFetch";
 import Button from "../../../UI/Button/Button";
+import CategoryFromCategoryList from "../CategoryFromCategoryList/CategoryFromCategoryList";
 
 
 function CategoriesList(props){ 
@@ -28,10 +28,7 @@ function CategoriesList(props){
             <div className='categories'>                          
                 {cat.map((elem) =>            
                     <Link key={elem.id} to={`/categories/${elem.id}`}>                
-                        <div className='categories_block'> 
-                            <div className='categories_foto' style={{backgroundImage: `url(${URL + elem.image})`}}></div>                 
-                            <h2 className="categories_text">{elem.title}</h2>            
-                        </div>
+                        <CategoryFromCategoryList title={elem.titel} image={elem.image}/>
                     </Link>)}
             </div> 
         </div>     

@@ -19,7 +19,7 @@ function Modal(props){
                             title={'Login'}
                             formType={'registrations'}
                             button={{redirect: 'Registrations', submit: 'Login'}}                            
-                            link={'/login'}      
+                            link={'/login'}                             
                         />
                     }/>
                     <Route path='/login' element={

@@ -53,7 +53,7 @@
 
 .light_green{
   background-color: var(--light_green);
-  border-color: var(--green);
+  outline-color: var(--green); 
   color: var(--green);  
 }
 

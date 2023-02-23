@@ -1,11 +1,11 @@
 
-import CategoriesList from "../../Header/Categories/CategoriesList/CategoriesList";
+import CategoriesList from "../../CategoriesPage/CategoriesList/CategoriesList";
 import Coupon from "../Coupon/Coupon";
 import NewSeasonSale from "../NewSeasonSale/NewSeasonSale";
 import SaleList from "../Sale/SaleList";
 
 
-function Home(){
+function HomePage(){
     return(
         <div>
             <NewSeasonSale/>
@@ -16,4 +16,4 @@ function Home(){
     )
 }
 
-export default Home
+export default HomePage
