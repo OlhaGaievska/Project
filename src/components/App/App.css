@@ -42,9 +42,9 @@ a{
     border-radius: 16px;
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1400px) {
     .margin_width{
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
     }
 }

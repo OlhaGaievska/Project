@@ -19,7 +19,9 @@ function Modal(props){
                             title={'Login'}
                             formType={'registrations'}
                             button={{redirect: 'Registrations', submit: 'Login'}}                            
-                            link={'/login'}                             
+                            link={'/login'}
+                            placeholder_email={'email'}
+                            placeholder_password={'password'}                                                     
                         />
                     }/>
                     <Route path='/login' element={
@@ -27,7 +29,9 @@ function Modal(props){
                             title={'Registration'} 
                             formType={'login'}  
                             button={{redirect: 'Login',  submit: 'Registration'}}
-                            link={'/registrations'}  
+                            link={'/registrations'}
+                            placeholder_email={'email'}
+                            placeholder_password={'password'}  
                         />
                     }/>
                 </Routes>
