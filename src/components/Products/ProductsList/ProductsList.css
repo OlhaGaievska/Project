@@ -1,7 +1,9 @@
 .list_of_products_block{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
+    font-size: 20px;   
 }
 
 .list_of_product_price{
@@ -10,11 +12,11 @@
     justify-content: flex-start;
     align-items: center;   
     margin: 0.5em 0em;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .list_of_product_price :first-child{
-    font-size: 30px;    
+    font-size: 32px;    
 }
 
 .list_of_product_price :nth-child(2n){
@@ -28,11 +30,15 @@
 }
 
 .button_list_of_product{
-	opacity: 0;
+    opacity: 0;
+    width: 20%;
+    height: 5%;   
     position: absolute;
     display: flex;
-    margin-top: 13.5em;
-    transition: 4s;	
+    align-items: center;
+    margin-left: 1em;       
+    margin-top: 9em;
+    transition: 3s;
 }
 
 .button_list_of_product:hover {	
@@ -42,8 +48,9 @@
 }
 
 .list_of_products_foto{
-    width: 300px;
-    height: 300px;     
+    width: 100%;
+    height: 100%; 
+    display: flex;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,6 +58,44 @@
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-.list_of_product_titel{
-    width: 70%;
+@media (max-width: 1150px){
+    .button_list_of_product{   
+        width: 37%;
+    }
+    
+}
+
+@media (min-width: 1770px){
+    .button_list_of_product{   
+        height: 7%;
+    }
+    
+}
+
+@media (min-width: 2000px){
+    .button_list_of_product{   
+        height: 10%;
+    }
+    
+}
+
+@media (min-width: 2250px){
+    .button_list_of_product{   
+        height: 13%;
+    }
+    
+}
+
+@media (min-width: 2550px){
+    .button_list_of_product{   
+        height: 16%;
+    }
+    
+}
+
+@media (min-width: 2800px){
+    .button_list_of_product{   
+        height: 19%;
+    }
+    
 }

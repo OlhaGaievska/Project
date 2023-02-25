@@ -32,7 +32,7 @@ function ProductsList (props){
                 <Button onClick={(e)=> {
                     e.preventDefault()
                     dispatch(addItemAction(elem))
-                }} title='Add to cart' color='light_green margin-left' size='big'/>                
+                }} title='Add to cart' color='light_green' size='very_long'/>                
             </div>                                        
         </div>                                      
     )

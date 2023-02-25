@@ -8,7 +8,7 @@ function Coupon(){
     return(    
     <div className='block_gnome'>
         <div className='block_gnome_photo'>
-            <img width={422} height={422}
+            <img width={622} height={622}
             src={gnome}
             alt="gnome_photo"
             className="gnome_photo"

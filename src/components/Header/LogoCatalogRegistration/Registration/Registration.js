@@ -14,12 +14,12 @@ function Registration(props){
 
     const emailElem = register('email', {required: 'Necessarily'})
     const passwordElem = register('password', {required: 'Necessarily'})
-    
+    console.log(placeholder_password)
     return(       
         <div>
             <p>{title}</p>
-            <Input placeholder_email={placeholder_email} size='small_input small_long' {...emailElem}/>
-            <Input placeholder_password={placeholder_password} size='small_input small_long' {...passwordElem}/>            
+            <Input placeholder={placeholder_email} size='small_input small_long' {...emailElem}/>
+            <Input placeholder={placeholder_password} size='small_input small_long' {...passwordElem}/>            
 
             <Button color='green' size='small margin margin-bottom' title={button.submit}/>
 

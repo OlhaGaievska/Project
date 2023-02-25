@@ -1,4 +1,5 @@
 import { URL } from "../../../App/App"
+import './CategoryFromCategoryList.css'
 
 
 function CategoryFromCategoryList(props){ 

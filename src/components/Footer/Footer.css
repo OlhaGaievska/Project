@@ -1,5 +1,5 @@
 .footer_address{
-    height: 25vh;    
+    height: 20vh;    
     font: inherit;
     display: flex;
     justify-content: space-between;
@@ -59,3 +59,4 @@ a .footer_address_what{
 .footer_address_inst_address_time :nth-child(2n){
     font-size: calc(20px + 10 * (100vw / 1440)); 
 }
+

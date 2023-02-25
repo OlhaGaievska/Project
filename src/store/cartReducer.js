@@ -6,6 +6,7 @@ const ADD_ITEM = 'ADD_ITEM'
 const ADD_COUNT = 'ADD_COUNT'
 const REM_COUNT = 'REM_COUNT'
 const DEL_COUNT = 'DEL_COUNT'
+const UPDATE_COUNT = 'UPDATE_COUNT'
 
 export const cartReducer = (state = defaultState, action) =>{
     switch(action.type){
@@ -41,6 +42,8 @@ export const cartReducer = (state = defaultState, action) =>{
                 }
         case DEL_COUNT:
             return {...state, cart: state.cart.filter(elem => elem.id != action.payload)}
+        case UPDATE_COUNT:                
+                return {...state, cart: state.cart.filter(elem => elem != elem)}
         default:
             return state
     }   
@@ -50,3 +53,4 @@ export const addItemAction = (payload) => ({type: ADD_ITEM, payload})
 export const addCountAction = (payload) => ({type: ADD_COUNT, payload}) 
 export const remCountAction = (payload) => ({type: REM_COUNT, payload})
 export const deletCountAction = (payload) => ({type: DEL_COUNT, payload})
+export const updateCountAction = (payload) => ({type: UPDATE_COUNT, payload})

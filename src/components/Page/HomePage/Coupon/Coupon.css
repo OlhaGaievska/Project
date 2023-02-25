@@ -8,6 +8,8 @@
 
 .block_gnome_photo{
     width: 47%;
+    display: flex;
+    justify-content: flex-start;    
 }
 
 .block_gnome_discount{
@@ -31,13 +33,19 @@
 }
 
 .input_mask{
-    padding: 1.4em 6.8em;
+    padding: 1.4em 8.8em 1.4em 2.8em;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 24px;
     color: var(--silver);
     margin-bottom: 1em;
 }
 
+@media (max-width: 1440px){
+.gnome_photo{
+    width: 422px;
+    height: 422px;
+}
+}
 
 @media (max-width: 1130px){
     .block_gnome_photo{

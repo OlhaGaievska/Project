@@ -3,7 +3,7 @@ import './Input.css'
 function Input (props){
     let {type, placeholder, color, size, ...otherProps} = props
     return(
-        <input type={type} {...otherProps} className={`input_elem ${type} ${color} ${size}`}/>        
+        <input placeholder={placeholder} type={type} {...otherProps} className={`input_elem ${type} ${color} ${size}`}/>        
     )
 }
 

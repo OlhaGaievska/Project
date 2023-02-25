@@ -1,10 +1,10 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Button from "../../UI/Button/Button"
 import InputMask from 'react-input-mask';
 import { URL } from "../../App/App"
-import { addCountAction, deletCountAction, remCountAction } from "../../../store/cartReducer"
+import { addCountAction, deletCountAction, remCountAction, updateCountAction } from "../../../store/cartReducer"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import './CartPage.css'
@@ -13,6 +13,7 @@ import './CartPage.css'
 function Cart(){ 
     const cart = useSelector(store => store.cart.cart)
     let dispatch = useDispatch()
+    const {id} = useParams()
 
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart))
@@ -69,7 +70,7 @@ function Cart(){
             </div> 
             <div className='cart_contacts'>           
                 <InputMask  placeholder="+49" className="input_mask" mask="+4\9 999 999 99" maskChar=" " />
-                <Button title='Order' color='green' size='very_long'/>
+                <Button onClick={() => dispatch(updateCountAction(id))} title='Order' color='green' size='very_long'/>
             </div>
         </div>
     </div>

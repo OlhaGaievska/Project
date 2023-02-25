@@ -95,3 +95,25 @@ hr{
         width: 40%;
     }
 }
+
+@media (min-width: 1800px){
+    .product_photo{
+
+        width: 900px;
+        height: 900px;
+    }
+}
+
+@media (min-width: 2100px){
+    .product_photo{
+        width: 1100px;
+        height: 1100px;
+    }
+}
+
+@media (min-width: 2400px){
+    .product_photo{
+        width: 1400px;
+        height: 1400px;
+    }
+}
