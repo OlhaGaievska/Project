@@ -28,7 +28,7 @@ function CategoriesList(props){
             <div className='categories'>                          
                 {cat.map((elem) =>            
                     <Link key={elem.id} to={`/categories/${elem.id}`}>                
-                        <CategoryFromCategoryList title={elem.titel} image={elem.image}/>
+                        <CategoryFromCategoryList title={elem.title} image={elem.image}/>
                     </Link>)}
             </div> 
         </div>     

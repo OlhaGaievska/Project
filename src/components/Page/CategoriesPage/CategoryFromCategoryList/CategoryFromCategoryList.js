@@ -8,7 +8,11 @@ function CategoryFromCategoryList(props){
 
     return(
         <div className='categories_block'> 
-            <div className='categories_foto' style={{backgroundImage: `url(${URL + image})`}}></div>                 
+            <img width={640} height={700}
+                src={`${URL + image}`}
+                alt='categories_photo'
+                className='categories_photo'
+            />              
             <h2 className="categories_text">{title}</h2>            
         </div>
     )

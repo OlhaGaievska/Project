@@ -1,24 +1,20 @@
-.categories_block{
+.categories_block{   
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: center;    
     flex-direction: column;
 }
 
-.categories_text{         
-    font-size: 20px;
-    text-align: left;
-    margin: 1em 0em 0em 5em;    
+.categories_text{
+    margin-top: 1em;         
+    font-size: 24px;
+    text-align: center;
 }
 
-.categories_foto{
+.categories_photo{
     width: 100%;
     height: 100%;
-    display: flex;    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    display: flex;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
